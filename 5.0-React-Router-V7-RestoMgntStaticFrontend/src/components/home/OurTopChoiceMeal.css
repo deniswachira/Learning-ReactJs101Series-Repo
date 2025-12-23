@@ -1,0 +1,196 @@
+/* Our Top Choice Meals - Beautiful Food Cards */
+.top-meals {
+    padding: 80px 20px;
+    background-color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    color: #2d5a4a;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.section-subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 60px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+/* Meals Grid - 3 columns */
+.meals-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Individual Meal Card */
+.meal-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.meal-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.16);
+}
+
+/* Meal Image */
+.meal-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.meal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.meal-card:hover .meal-image img {
+    transform: scale(1.05);
+}
+
+/* Category Badge */
+.meal-category {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #2d5a4a;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Meal Content */
+.meal-content {
+    padding: 25px;
+    text-align: left;
+}
+
+.meal-name {
+    font-size: 22px;
+    color: #2d5a4a;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.meal-description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    height: 60px;
+    overflow: hidden;
+}
+
+/* Meal Footer */
+.meal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meal-price {
+    font-size: 24px;
+    color: #2d5a4a;
+    font-weight: bold;
+}
+
+.order-btn {
+    background-color: #2d5a4a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.order-btn:hover {
+    background-color: #1e3d32;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(45, 90, 74, 0.3);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .top-meals {
+        padding: 60px 20px;
+    }
+
+    .section-title {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .section-subtitle {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .meals-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .meal-image {
+        height: 200px;
+    }
+
+    .meal-content {
+        padding: 20px;
+    }
+
+    .meal-name {
+        font-size: 20px;
+    }
+
+    .meal-description {
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .meal-price {
+        font-size: 20px;
+    }
+
+    .order-btn {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+}
+
+/* Tablet Responsive */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .meals-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .meal-image {
+        height: 220px;
+    }
+}

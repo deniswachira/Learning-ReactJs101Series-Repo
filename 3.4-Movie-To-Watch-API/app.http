@@ -1,0 +1,58 @@
+// HTTP requests for the Todo API
+// Base URL: http://localhost:3000
+// Endpoints:
+//GET /api/todos - Get all Todos
+//GET /api/todos/:id - Get a specific Todo by ID
+//POST /api/todos - Create a new Todo
+//PUT /api/todos/:id - Update a specific Todo
+//DELETE /api/todos/:id - Delete a specific Todo
+
+//Not found endpoint
+###
+GET http://localhost:3000/just-a-test
+
+//Metrics
+###
+GET http://localhost:3000/metrics
+
+//Default route
+###
+GET http://localhost:3000/
+
+
+
+# =====GET ALL MOVIES =======
+###
+GET http://localhost:3000/api/movies
+
+# =====GET MOVIE BY ID =======
+###
+GET http://localhost:3000/api/movies/1
+
+
+// =====CREATE NEW MOVIE ======
+###
+POST http://localhost:3000/api/movies
+Content-Type: application/json
+
+{
+  "movie_name": "Inception 2",
+  "release_date": "2011-07-16",
+  "is_watched": true
+}
+
+###
+PUT http://localhost:3000/api/movies/1
+Content-Type: application/json
+
+{
+  "movie_name": "Inception",
+  "release_date": "2010-07-16",
+  "is_watched": true
+}
+
+
+
+//=====DELETE A MOVIE  BY ID======
+###
+DELETE http://localhost:3000/api/movies/2

@@ -1,0 +1,116 @@
+/* What You'll Get Section - Simple and Clean for Beginners */
+.what-you-get {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    color: #2d5a4a;
+    margin-bottom: 60px;
+    font-weight: bold;
+}
+
+/* Features Grid - 3 columns */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 40px;
+}
+
+/* Individual Feature Card */
+.feature-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Feature Icon */
+.feature-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #4CAF50, #81C784);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    box-shadow: 0 8px 20px rgba(76, 175, 80, 0.3);
+}
+
+/* Feature Title */
+.feature-card h3 {
+    font-size: 24px;
+    color: #2d5a4a;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Feature Description */
+.feature-card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .what-you-get {
+        padding: 60px 20px;
+    }
+
+    .section-title {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .feature-card {
+        padding: 30px 20px;
+    }
+
+    .feature-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 40px;
+    }
+
+    .feature-card h3 {
+        font-size: 20px;
+    }
+
+    .feature-card p {
+        font-size: 15px;
+    }
+}
+
+/* Tablet Responsive */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .features-grid {
+        gap: 30px;
+    }
+
+    .feature-card {
+        padding: 35px 25px;
+    }
+}
